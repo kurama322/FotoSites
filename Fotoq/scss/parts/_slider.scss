@@ -1,0 +1,103 @@
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+
+  .slide-button {
+    background-color: #d0b8ac;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    z-index: 1;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: #b79c8e;
+    }
+
+    &#prev-slide {
+      margin-right: 0.5rem;
+    }
+
+    &#next-slide {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .image-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .image-item {
+      flex: 0 0 auto;
+      width: 220px;
+      height: auto;
+      border-radius: 12px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.slider-scrollbar {
+  width: 100%;
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+
+  .scrollbar-track {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .scrollbar-thumb {
+    position: absolute;
+    height: 100%;
+    background-color: #d0b8ac;
+    border-radius: 3px;
+    width: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: #b79c8e;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    .slide-button {
+      font-size: 1.5rem;
+      padding: 0.3rem;
+    }
+
+    .image-list {
+      gap: 0.5rem;
+
+      .image-item {
+        width: 160px;
+      }
+    }
+  }
+}

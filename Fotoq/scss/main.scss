@@ -1,0 +1,177 @@
+@mixin adaptiveValue($property, $min, $preferred: null, $max: null) {
+    @if $preferred != null and $max != null {
+      #{$property}: clamp(#{$min}, #{$preferred}, #{$max});
+    } @else {
+      #{$property}: #{$min};
+    }
+  }
+@import './parts/animation';
+@import './parts/header';
+@import './parts/section';
+@import './parts/slider';
+@import './parts/lightbox';
+@import './parts/footer';
+
+body
+{
+    background-color: #000000;
+    
+}
+
+a
+{
+    text-decoration: none;
+    color:#D0B8AC;
+}
+
+
+.navbar-toggler-icon {
+background-color: #D0B8AC;
+}
+
+main
+{
+    color: #000000;
+}
+
+
+/* Встановлюємо розмір для всіх зображень */
+img {
+  height: auto;
+  width: 600px;
+}
+
+/* Виняток — зображення в слайдері */
+.slider-wrapper {
+  width: auto;
+  height: auto;
+  object-fit: unset;
+}
+
+
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+
+  &.animated {
+    opacity: 2;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 480px) {
+  /* Навігація */
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .header_section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .header_text h1 {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+
+  .header_text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .social_media {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .section_one,
+  .section_portfolio,
+  .section_three,
+  .price,
+  .contact {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .left_colum, .right_colum {
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-list {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+  }
+
+  .footer_nav_menu {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer_content h1,
+  .footer_content h2 {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .header_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+  }
+
+  .section_one,
+  .section_portfolio,
+  .section_three,
+  .price,
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 3rem;
+  }
+
+  .left_colum, .right_colum {
+    width: 50%;
+  }
+
+  .social_media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .image-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .footer_nav_menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .contact form {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+

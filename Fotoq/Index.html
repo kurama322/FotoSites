@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FotoSites</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Abhaya+Libre:regular,500,600,700,800"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body class="body">
+  <header class="header container-fluid">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-xl">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#price">Price</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header_section container-md">
+      <div class="header_text">
+        <h1 class="header_h">Monika <br />Johnson</h1>
+        <p class="header_p">
+          Our photography services feature highly skilled <br />
+          professionals and the attraction of top talent for<br />
+          each shoot. We excel at solving creative and<br />
+          organizational challenges, regardless of the level<br />
+          of complexity involved.
+        </p>
+      </div>
+
+      <div class="social_media">
+        <span class="span_social"></span>
+        <a class="facebook" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+        <a class="instagram" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a class="maxmodels" href="https://www.maxmodels.pl/"><i class="bi bi-meta"></i></a>
+        <span class="span_social"></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section_one section_with_me container-md" id="about_me">
+        <div class="left_colum">
+            <img src="./image/left_image.png" alt="left_image">
+        <h1>Photographer <br> Monica Johnson</h1>
+        </div>
+        <div class="right_colum">
+            <span class="span_about_me"></span>
+            <div class="text_right_colum">
+            <p> “As a professional photographer, I aim to capture the essence and beauty of the world around <br>
+                me through the lens of my camera. With a keen eye for detail, I am able to create stunning<br>
+                 images that showcase the unique stories and personalities of my clients.” </p>
+                </div>
+            <img src="./image/rifht_image.png" alt="left_image">
+        </div>
+    </section>
+    <section class="section_two section_portfolio container-md" id="portfolio">
+        <div class="left_colum">
+            <h1>Portfolio</h1>
+            <img src="./image/portfolio_left.png" alt="">
+        </div>
+        <div class="right_colum">
+            <div class="right_text"><p>Thought years of experience, I have honed my skills in composition, lighting, and post-<br>production to produce stunning visuals that showcase the beauty of my subjects.<br> Whether it's a portrait, landscape, or event, I approach each project with passion and <br>dedication, striving to deliver images that exceed my clients' expectations. </p></div>
+            <img src="./image/right_portfolio.png" alt="">
+        </div>
+        <span class="portfolio_span"></span>
+    </section>
+    <section class="section_three section_slider container-md">
+        <div class="latest_work">
+            <h1>My Latest Work’s</h1>  
+            <p>Photography has always been considered a form of magic, as it <br> captures moments of the past, present and future, preserving them <br>for eternity. It has the ability to capture emotions, memories, and expressions of people, places, and <br> things in a way that surpasses<br> other art forms, creating a world of beauty, wonder, and discovery.</p>
+        </div>
+        <div class="slider-wrapper">
+          <button id="prev-slide" class="slide-button material-symbols-rounded">
+           .
+          </button>
+          <ul class="image-list">
+            <img class="image-item" src="./image/slider/1slider.png" alt="img-1" />
+            <img class="image-item" src="./image/slider/2slider.png" alt="img-2" />
+            <img class="image-item" src="./image/slider/3slider.png" alt="img-3" />
+            <img class="image-item" src="./image/slider/4slider.png" alt="img-4" />
+            <img class="image-item" src="./image/slider/1slider.png" alt="img-1" />
+            <img class="image-item" src="./image/slider/2slider.png" alt="img-2" />
+            <img class="image-item" src="./image/slider/3slider.png" alt="img-3" />
+            <img class="image-item" src="./image/slider/4slider.png" alt="img-4" />
+            <img class="image-item" src="./image/slider/3slider.png" alt="img-3" />
+            <img class="image-item" src="./image/slider/4slider.png" alt="img-4" />
+          </ul>
+          <button id="next-slide" class="slide-button material-symbols-rounded">
+          .
+          </button>
+        </div>
+        <div class="slider-scrollbar">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
+          </div>
+        </div>
+    </section>
+    <section>
+      <div class="price container-md" id="price">
+        <div class="left_colum">
+              <img src="./image/section_price.png" alt="">
+        </div>
+        <div class="right_colum">
+          <div class="prices">
+            <h1>My Prices</h1>
+          </div>
+          <div class="services">
+            <div class="first"> 
+              <h2>Portrait</h2>
+              <h2>220$</h2>
+              <span></span>
+              <p>This includes individual, family, and group portraits, as well as headshots <br> for business and corporate purposes.</p>
+            </div>
+            <div class="first"> 
+              <h2>Portrait</h2>
+              <h2>220$</h2>
+              <span></span>
+              <p>This includes individual, family, and group portraits, as well as headshots <br> for business and corporate purposes.</p>
+            </div>
+            <div class="first"> 
+              <h2>Portrait</h2>
+              <h2>220$</h2>
+              <span></span>
+              <p>This includes individual, family, and group portraits, as well as headshots <br> for business and corporate purposes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact container-md" id="contact">
+      <div class="contact">
+         <div class="left_colum">
+          <form action="/submit_form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="phone" id="phone" name="phone" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+         </div>
+         <div class="right_colum">
+          <img src="./image/contact_image.png" alt="">
+         </div> 
+      </div>
+    </section>
+    <div class="lightbox" id="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="lightbox image">
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer_content container-fluid">
+    <div class="footer_nav_menu">
+      <a class="nav-link" href="#portfolio">Portfolio</a>
+      <a class="nav-link" href="#price">Price</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </div>
+    <h1 >Photographer</h1>
+    <div class="social">
+      <a class="facebook" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+        <a class="instagram" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a class="maxmodels" href="https://www.maxmodels.pl/"><i class="bi bi-meta"></i></a>
+    </div>
+  </div>
+    <h2>Monica Johnson</h2>
+    <span class="footer_span"></span>
+  
+  <div class="developer">2023 ©Monica Johnson. All Rights Reserved.</div>
+    
+  </footer>
+
+  
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+  
+</body>
+</html>
